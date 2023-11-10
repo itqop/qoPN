@@ -50,7 +50,6 @@ async def update_data_periodically():
             await db.update_used(real_use)
         except Exception as e:
             print(f"Error updating data: {e}")
-        print("Данные поменялись")
         await sleep(6400)
         
 
